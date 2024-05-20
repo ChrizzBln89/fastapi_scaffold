@@ -1,6 +1,6 @@
 from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
-from routers.test import router as test_router
+from routers.router import router as test_router
 from routers.limiter import limiter
 from slowapi import _rate_limit_exceeded_handler
 from slowapi.errors import RateLimitExceeded
@@ -26,6 +26,7 @@ app.add_middleware(
 
 app.include_router(test_router)
 
+
 @app.get("/")
 @limiter.limit("1/second")
 def read_root(request: Request):
@@ -35,4 +36,4 @@ def read_root(request: Request):
 @app.post("/sql/")
 @limiter.limit("1/second")
 async def sql_response(request: Request):
-    return 
+    return
