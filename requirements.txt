@@ -3,3 +3,4 @@ pytest
 fastapi[all]
 uvicorn[standard]
 slowapi
+locust
