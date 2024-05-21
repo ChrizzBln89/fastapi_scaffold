@@ -28,7 +28,7 @@ app.include_router(test_router)
 
 
 @app.get("/")
-@limiter.limit("100/second")
+@limiter.limit("100000000/second")
 def read_root(request: Request):
     return {"Hello": "World"}
 
