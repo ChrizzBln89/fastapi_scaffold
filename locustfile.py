@@ -1,6 +1,5 @@
 from locust import HttpUser, TaskSet, task, between
 
-
 class UserBehavior(TaskSet):
     @task
     def get_data(self):
