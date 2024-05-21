@@ -11,3 +11,8 @@ push_to_github:
 	git add .
 	git commit -m "`date`"
 	git push origin main
+
+.PHONY: start_locust
+
+start_locust:
+	locust -f locustfile.py
