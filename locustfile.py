@@ -4,7 +4,7 @@ from locust import HttpUser, TaskSet, task, between
 class UserBehavior(TaskSet):
     @task
     def get_data(self):
-        self.client.get("/data")
+        self.client.get("/")
 
     @task
     def post_data(self):

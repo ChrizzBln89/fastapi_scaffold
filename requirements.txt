@@ -4,3 +4,5 @@ fastapi[all]
 uvicorn[standard]
 slowapi
 locust
+pytest-asyncio 
+httpx
