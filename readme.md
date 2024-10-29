@@ -18,9 +18,7 @@ This repository provides a scaffold to set up **FastAPI** with request limiting 
 2. Use the configuration in `.devcontainer/devcontainer.json`.
 3. Required dependencies in `requirements.txt` are auto-installed.
 
-> _Screenshot of setup process in VS Code devcontainer:_
-
-![VS Code Devcontainer Setup](https://code.visualstudio.com/assets/docs/remote/devcontainer/remote-dev-container.png)
+https://code.visualstudio.com/docs/devcontainers/tutorial
 
 ### Option 2: Virtual Environment
 1. Create a virtual environment:
