@@ -52,4 +52,5 @@ Use the Makefile to start services:
 
 <details>
   <summary>📁 Project Structure</summary>
+  .devcontainer/ devcontainer.json .github/ dependabot.yml Dockerfile locustfile.py main.py Makefile requirements.txt routers/ limiter.py router.py test_api.py
   
