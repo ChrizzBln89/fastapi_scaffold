@@ -54,8 +54,33 @@ You can use the Makefile to start the FastAPI server and the Locust web interfac
 
 ### Project Structure
 
-. ├── .devcontainer/ │ └── devcontainer.json ├── .github/ │ └── dependabot.yml ├── .pytest_cache/ │ ├── CACHEDIR.TAG │ ├── README.md │ └── v/ │ └── cache/ │ ├── lastfailed │ ├── nodeids │ └── stepwise ├── pycache/ ├── Dockerfile ├── gradie ├── locustfile.py ├── main.py ├── Makefile ├── readme.md ├── requirements.txt ├── routers/ │ ├── pycache/ │ ├── limiter.py │ └── router.py └── test_api.py
-
+__pycache__/
+.devcontainer/
+    devcontainer.json
+.github/
+    dependabot.yml
+.gitignore
+.pytest_cache/
+    .gitignore
+    CACHEDIR.TAG
+    README.md
+    v/
+        cache/
+            lastfailed
+            nodeids
+            stepwise
+Dockerfile
+gradie
+locustfile.py
+main.py
+Makefile
+readme.md
+requirements.txt
+routers/
+    __pycache__/
+    limiter.py
+    router.py
+test_api.py
 
 ### Configuration
 
